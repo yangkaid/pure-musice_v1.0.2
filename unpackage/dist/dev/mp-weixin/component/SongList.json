@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "layout-card": "/component/LayoutCard",
+    "song-list-item": "/component/SongListItem"
+  },
+  "component": true
+}

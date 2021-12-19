@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "layout-card": "/component/LayoutCard",
+    "song-swiper": "/component/SongSwiper"
+  },
+  "component": true
+}

@@ -1,0 +1,1 @@
+<view class="song-swiper-item data-v-7ca21b6d"><image class="song-image data-v-7ca21b6d" src="../static/song-cover.jpg"></image><view class="song-info data-v-7ca21b6d"><text class="name data-v-7ca21b6d">{{songName}}</text><text class="singer data-v-7ca21b6d">{{singer}}</text></view></view>

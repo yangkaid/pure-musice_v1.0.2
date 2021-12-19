@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "layout-card": "/component/LayoutCard",
+    "rank-item": "/component/RankItem"
+  },
+  "component": true
+}
