@@ -1,8 +1,8 @@
 <template>
 	<LayoutCard title="推荐音乐">
 		<swiper :indicator-dots="false" :autoplay="false" :style="{ height: ' 400rpx' }" next-margin="60rpx">
-			<swiper-item v-for="(item, index) in songList" :key="index">
-				<view class="swiper-item" v-for="(songGroup, index) in item" :key="index"><SongSwiper :songName="songGroup.songName" :singer="songGroup.singer"></SongSwiper></view>
+			<swiper-item v-for="(item, index1) in songList" :key="index1">
+				<view class="swiper-item" v-for="(songGroup, index2s) in item" :key="index2"><SongSwiper :songName="songGroup.songName" :singer="songGroup.singer"></SongSwiper></view>
 			</swiper-item>
 		</swiper>
 	</LayoutCard>

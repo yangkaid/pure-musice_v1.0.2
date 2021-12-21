@@ -12,6 +12,7 @@
 		<recommend-song />
 		<SongList></SongList>
 		<RankList></RankList>
+		<pure-player></pure-player>
 	</view>
 </template>
 
@@ -19,11 +20,13 @@
 import RecommendSong from '../../component/RecommendSong.vue';
 import SongList from '../../component/SongList.vue'
 import RankList from '../../component/RankList.vue'
+import PurePlayer from '../../component/player.vue'
 export default {
 	components: {
 		RecommendSong,
 		SongList,
-		RankList
+		RankList,
+		PurePlayer
 	},
 	data() {
 		return {

@@ -4,6 +4,7 @@
     "uni-search-bar": "/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
     "recommend-song": "/component/RecommendSong",
     "song-list": "/component/SongList",
-    "rank-list": "/component/RankList"
+    "rank-list": "/component/RankList",
+    "pure-player": "/component/player"
   }
 }
