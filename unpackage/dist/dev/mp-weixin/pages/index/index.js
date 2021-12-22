@@ -104,7 +104,7 @@ var components
 try {
   components = {
     uniSearchBar: function() {
-      return Promise.all(/*! import() | uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue */ 28))
+      return Promise.all(/*! import() | uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue */ 44))
     }
   }
 } catch (e) {
@@ -159,7 +159,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var RecommendSong = function RecommendSong() {__webpack_require__.e(/*! require.ensure | component/RecommendSong */ "component/RecommendSong").then((function () {return resolve(__webpack_require__(/*! ../../component/RecommendSong.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var SongList = function SongList() {__webpack_require__.e(/*! require.ensure | component/SongList */ "component/SongList").then((function () {return resolve(__webpack_require__(/*! ../../component/SongList.vue */ 44));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var RankList = function RankList() {__webpack_require__.e(/*! require.ensure | component/RankList */ "component/RankList").then((function () {return resolve(__webpack_require__(/*! ../../component/RankList.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var RecommendSong = function RecommendSong() {__webpack_require__.e(/*! require.ensure | component/RecommendSong */ "component/RecommendSong").then((function () {return resolve(__webpack_require__(/*! ../../component/RecommendSong.vue */ 55));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var SongList = function SongList() {__webpack_require__.e(/*! require.ensure | component/SongList */ "component/SongList").then((function () {return resolve(__webpack_require__(/*! ../../component/SongList.vue */ 60));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var RankList = function RankList() {__webpack_require__.e(/*! require.ensure | component/RankList */ "component/RankList").then((function () {return resolve(__webpack_require__(/*! ../../component/RankList.vue */ 67));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
 
 
 

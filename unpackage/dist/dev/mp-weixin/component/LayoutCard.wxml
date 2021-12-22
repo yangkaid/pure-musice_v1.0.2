@@ -1,1 +1,0 @@
-<view class="layout data-v-f4bb874c"><view class="title data-v-f4bb874c"><view class="title-left data-v-f4bb874c"><text class="data-v-f4bb874c">{{title}}</text></view><view class="title-right data-v-f4bb874c"><text class="data-v-f4bb874c">更多</text></view></view><view class="content data-v-f4bb874c"><slot></slot></view></view>

@@ -12,6 +12,7 @@
 		<recommend-song :songList="recommendSongList" />
 		<SongList :songList="songList"></SongList>
 		<RankList :rankList="rankList"></RankList>
+		<pure-player></pure-player>
 	</view>
 </template>
 
@@ -179,7 +180,7 @@
 						]
 					},
 				]
-				
+
 			};
 		},
 		onLoad() {},
