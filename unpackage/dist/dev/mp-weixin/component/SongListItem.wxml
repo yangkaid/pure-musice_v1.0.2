@@ -1,1 +1,1 @@
-<view class="list-item data-v-6ef9c7f4"><image class="image-item data-v-6ef9c7f4" src="../static/list-cover.jpg"></image><view class="description data-v-6ef9c7f4">后青春期的诗，那些年MP3里的歌</view></view>
+<view class="list-item data-v-6ef9c7f4"><image class="image-item data-v-6ef9c7f4" src="../static/list-cover.jpg"></image><view class="description data-v-6ef9c7f4">{{''+description+''}}</view></view>

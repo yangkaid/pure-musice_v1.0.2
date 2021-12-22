@@ -2,12 +2,20 @@
 	<view class="list-item">
 		<image src="../static/list-cover.jpg" class="image-item"></image>
 		<view class="description">
-			后青春期的诗，那些年MP3里的歌
+			{{description}}
 		</view>
 	</view>
 </template>
 
 <script>
+	export default {
+		props: {
+			description: {
+				type: String,
+				default: ''
+			},
+		},
+	}
 </script>
 
 <style lang="scss" scoped>

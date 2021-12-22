@@ -1,10 +1,7 @@
 <template>
 	<LayoutCard title="排行榜">
 		<view class="rank">
-			<RankItem></RankItem>
-			<RankItem></RankItem>
-			<RankItem></RankItem>
-			<RankItem></RankItem>
+			<RankItem v-for="(item, index) in rankList" :rankTitle="item.rankTitle" :song="item.song"></RankItem>
 		</view>
 	</LayoutCard>
 </template>
@@ -16,7 +13,13 @@ export default {
 	components: {
 		LayoutCard,
 		RankItem
-	}
+	},
+	props: {
+		rankList: {
+			type: Array,
+			default: []
+		},
+	},
 };
 </script>
 

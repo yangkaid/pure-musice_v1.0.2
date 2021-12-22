@@ -26,6 +26,5 @@
 /* 文章场景相关 */
 .song-list.data-v-640bd85a {
   white-space: nowrap;
-  height: 700rpx;
 }
 

@@ -1,21 +1,32 @@
 <template>
 	<view class="rank-item">
 		<view class="item-left">
-			<view class="rank-name">新歌榜</view>
+			<view class="rank-name">{{rankTitle}}</view>
 			<image src="../static/list-cover.jpg" class="rank-cover"></image>
 		</view>
 		<view class="item-right">
-			<view class="song" v-for="i in 3" :key="i">
+			<view class="song" v-for="(item, index) in song" :key="i">
 				<view>
-					<text class="name">1、无名的人</text>
-					<text class="singer">- 毛不易</text>
+					<text class="name">{{item.name}}</text>
+					<text class="singer">- {{item.singer}}</text>
 				</view>
 			</view>
 		</view>
 	</view>
 </template>
 
-<script></script>
+<script>
+	export default {
+		props: {
+			rankTitle: {
+				type: String,
+				default: ''
+			},
+			cover: String,
+			song: Array
+		},
+	}
+</script>
 
 <style lang="scss" scoped>
 .rank-item {

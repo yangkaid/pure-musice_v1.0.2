@@ -30,14 +30,12 @@
 	.layout {
 		display: flex;
 		flex-direction: column;
-		// height: 450rpx;
 		margin-top: 20rpx;
 		.title {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			height: 80rpx;
-			// width: 100%;
 			margin: 10rpx 20rpx;
 		}
 	}
