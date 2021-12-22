@@ -1,6 +1,6 @@
 <template>
 	<view class="song-swiper-item">
-		<image src="../static/song-cover.jpg" class="song-image"></image>
+		<image :src="cover" class="song-image"></image>
 		<view class="song-info">
 			<text class="name">{{songName}}</text>
 			<text class="singer">{{singer}}</text>

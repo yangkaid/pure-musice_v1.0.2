@@ -1,7 +1,7 @@
 <template>
 	<LayoutCard title="排行榜" jumpPage="pages/rank-list/rank-list">
 		<view class="rank">
-			<RankItem v-for="(item, index) in rankList" :rankTitle="item.rankTitle" :song="item.song"></RankItem>
+			<RankItem v-for="(item, index) in rankList" :rankTitle="item.rankTitle" :song="item.song" :key="index"></RankItem>
 		</view>
 	</LayoutCard>
 </template>
