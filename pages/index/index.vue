@@ -1,14 +1,8 @@
 <template name="RecommendSong">
 	<view class="content">
-		<uni-search-bar v-model="searchValue" @confirm="search" />
-		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
-			<swiper-item v-for="item in swiperList" :key="item.name">
-				<view class="swiper-item " :style="{ backgroudColor: item.bgColor }" @click="seeCover(item)">
-					{{ item.name }}
-					<!-- <image :src="item.url" mode=""widthFix></image> -->
-				</view>
-			</swiper-item>
-		</swiper>
+		<uni-search-bar v-model="searchValue" @confirm="search" placeholder="搜索你喜欢的音乐" />
+		<u-swiper :list="swiperList" @click="clickSwiper" previousMargin="30" nextMargin="30" circular :autoplay="true"
+			radius="5" :indicator="true"></u-swiper>
 		<recommend-song :songList="recommendSongList" />
 		<SongList :songList="songList"></SongList>
 		<RankList :rankList="rankList"></RankList>
@@ -28,20 +22,8 @@
 		},
 		data() {
 			return {
-				searchValue: 'Hello',
-				swiperList: [{
-						name: 'A',
-						bgColor: 'red'
-					},
-					{
-						name: 'B',
-						bgColor: 'green'
-					},
-					{
-						name: 'C',
-						bgColor: 'pink'
-					}
-				],
+				searchValue: '',
+				swiperList: [],
 				recommendSongList: [
 					[{
 							songName: '如果当时',
@@ -124,12 +106,10 @@
 
 					]
 				],
-				rankList: [
-					{
+				rankList: [{
 						rankTitle: '新歌榜',
 						cover: 'url',
-						song: [
-							{
+						song: [{
 								name: '无名的人',
 								singer: '毛不易'
 							},
@@ -146,8 +126,7 @@
 					{
 						rankTitle: '新歌榜',
 						cover: 'url',
-						song: [
-							{
+						song: [{
 								name: '无名的人',
 								singer: '毛不易'
 							},
@@ -164,8 +143,7 @@
 					{
 						rankTitle: '新歌榜',
 						cover: 'url',
-						song: [
-							{
+						song: [{
 								name: '无名的人',
 								singer: '毛不易'
 							},
@@ -183,13 +161,19 @@
 
 			};
 		},
-		onLoad() {},
+		async onLoad() {
+			let res = await uni.$u.http.get('http://localhost:3000/home/banner')
+			res.data.forEach((item) => {
+				this.swiperList.push(item.pic)
+			})
+			console.log(this.swiperList)
+		},
 		methods: {
 			search(value) {
 				console.log(value);
 			},
-			seeCover(item) {
-				console.log(item);
+			clickSwiper(index) {
+				console.log(index);
 			}
 		}
 	};

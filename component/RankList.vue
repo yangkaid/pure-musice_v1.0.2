@@ -1,5 +1,5 @@
 <template>
-	<LayoutCard title="排行榜">
+	<LayoutCard title="排行榜" jumpPage="pages/rank-list/rank-list">
 		<view class="rank">
 			<RankItem v-for="(item, index) in rankList" :rankTitle="item.rankTitle" :song="item.song"></RankItem>
 		</view>
